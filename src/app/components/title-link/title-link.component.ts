@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TitleLinkComponent implements OnInit {
 
-  private params: any;
+  params: any;
 
   constructor() { }
 

@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ThumbnailsComponent implements OnInit {
 
-  private params: any;
+  params: any;
 
   constructor() { }
 
