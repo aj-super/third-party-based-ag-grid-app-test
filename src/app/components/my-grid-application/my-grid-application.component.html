@@ -1,7 +1,8 @@
 <div>
     <div class="header">
         <div class="header-toggle-selection">
-            <input type="checkbox" id="visibleSelection" [ngModel]="selectionModeEnabled" (ngModelChange)="onToggleSelectionMode($event)"> <label for="visibleSelection">Selection Mode</label>
+            <input type="checkbox" id="visibleSelection" [ngModel]="selectionModeEnabled"
+                (ngModelChange)="onToggleSelectionMode($event)"> <label for="visibleSelection">Selection Mode</label>
         </div>
         <div class="header-total">
             Total: {{ gridOptions.rowData.length }}
@@ -10,6 +11,7 @@
             Selected: {{ selectedCount }}
         </div>
     </div>
-    <ag-grid-angular #agGrid class="ag-theme-balham my-grid" [gridOptions]="gridOptions" [getContextMenuItems]="getContextMenuItems">
+    <ag-grid-angular #agGrid class="ag-theme-balham my-grid" [gridOptions]="gridOptions"
+        [getContextMenuItems]="getContextMenuItems">
     </ag-grid-angular>
 </div>

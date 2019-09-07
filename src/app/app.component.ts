@@ -10,7 +10,7 @@ export class AppComponent implements OnInit {
   title = 'ag-grid-cli';
   videos = null;
 
-  constructor(private api: ApiService) {}
+  constructor(private api: ApiService) { }
 
   ngOnInit() {
     this.api.getVideos().subscribe((res: any) => {
