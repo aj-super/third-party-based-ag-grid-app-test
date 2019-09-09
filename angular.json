@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ag-grid-cli": {
+    "third-party-based-ag-grid-app-test": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/ag-grid-cli",
+            "outputPath": "dist/third-party-based-ag-grid-app-test",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -64,18 +64,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ag-grid-cli:build"
+            "browserTarget": "third-party-based-ag-grid-app-test:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "ag-grid-cli:build:production"
+              "browserTarget": "third-party-based-ag-grid-app-test:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ag-grid-cli:build"
+            "browserTarget": "third-party-based-ag-grid-app-test:build"
           }
         },
         "test": {
@@ -114,16 +114,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "ag-grid-cli:serve"
+            "devServerTarget": "third-party-based-ag-grid-app-test:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "ag-grid-cli:serve:production"
+              "devServerTarget": "third-party-based-ag-grid-app-test:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "ag-grid-cli"
+  "defaultProject": "third-party-based-ag-grid-app-test"
 }
